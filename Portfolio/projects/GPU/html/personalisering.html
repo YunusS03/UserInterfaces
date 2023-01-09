@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>GPUSTART PERSONALISERINH</title>
+    <link href="../media/Icons/gpu.png" rel="icon" type="image/x-icon"/>
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+
+<body class="container">
+<h1 class="hidden">Personalisering</h1>
+<header class="header">
+
+    <img class="logo" alt="Afbeelding van de Logo" src="../media/Icons/gpu.png">
+    <img class="banner" alt="Afbeelding van de banner" src="../media/Banners/resized_banner2.jpg">
+
+
+    <nav class="navigation">
+        <h2 class="hidden">Navigation</h2>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li class="ProductenMenu "><a href="Products.html">producten</a>
+                <ul class="dropdown">
+                    <li><a href="Products.html#cat2">GTX</a></li>
+                    <li><a href="Products.html#cat1">RTX</a></li>
+                    <li><a href="Products.html#cat3">TITAN</a></li>
+                </ul>
+            </li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="faq.html">faq</a></li>
+            <li class="active">personalisering</li>
+        </ul>
+    </nav>
+</header>
+<main>
+
+
+    <section class="personalisering">
+        <h2 class="personaliseringTitle">Personalisering Form</h2>
+        <form class="forms" action="Bevestiging.html">
+
+            <fieldset name="Product">
+                <legend> keuze product </legend>
+                <label for="productform">Kies Uw Product</label>
+                <select name="product" size="1" id="productform" required>
+                    <option value="">- kies uw Product -</option>
+                    <optgroup label="RTX">
+                        <option value="2060MSI">2060 MSI</option>
+                        <option value="2060AORUS">2060 AORUS</option>
+                        <option value="2080AORUS">2060 AORUS</option>
+                        <option value="2070ASUS">2070 ASUS</option>
+                        <option value="2060MSI">3070 MSI</option>
+                        <option value="2070ASUS">3070 ASUS</option>
+                        <option value="2070ASUS">3080 ASUS</option>
+
+                    </optgroup>
+                    <optgroup label="GTX">
+                        <option value="1650ASUS">1650 ASUS</option>
+                        <option value="1660ASUS">1660 ASUS</option>
+                        <option value="1660ASUS-SUPER">1660 ASUS SUPER</option>
+                        <option value="1660GEFORCE">1660 GEFORCE</option>
+                        <option value="1660GIGABYTE">1660 GIGABYTE</option>
+                        <option value="1660GEFORCE">1650 MSI SUPER</option>
+                        <option value="1660GEFORCE">1660 MSI SUPER</option>
+                    </optgroup>
+                    <optgroup label="TITAN">
+                        <option value="3090TITAN4G">3090 4G</option>
+                        <option value="3090TITAN24G">3090 24G</option>
+                        <option value="X-TITAN">X 12G</option>
+                        <option value="V-TITAN">V 24G</option>
+                        <option value="HIGH-TITAN">HIGH 12G</option>
+                        <option value="Z-TITAN">Z TITAN</option>
+                        <option value="GTX-TITAN">TITAN GTX 16G</option>
+
+
+                    </optgroup>
+                </select>
+            </fieldset>
+            <fieldset name="ProductOptions">
+                <legend> personaliserings opties </legend>
+                <label for="color1">Kleur voorkant </label>
+                <label for="chekbox1"></label>
+                <input id="chekbox1" type="checkbox" name="kleur1janee">
+                <input id="color1" name="favcolor" type="color">
+                <label for="color2">Kleur Backplate</label>
+                <label for="chekbox2"></label>
+                <input id="chekbox2" type="checkbox" name="kleur2janee">
+                <input id="color2" name="favcolor" type="color">
+                <label for="color3">Kleur bekabeling</label>
+                <label for="chekbox3"></label>
+                <input id="chekbox3" type="checkbox" name="kleur3janee">
+                <input id="color3" name="favcolor" type="color">
+                <label> Eigen Logo uploaden</label>
+                <label for="chekbox4"></label>
+                <input id="chekbox4" type="checkbox" name="logojanee">
+                <input type="file" accept="image/*">
+
+                <label for="verlichting">verlichting</label>
+                <input type="checkbox" name="verlichting" id="verlichting">
+                <label for="rgb"> RGB </label>
+                <input id="rgb" type="radio" name="led">
+                <label for="rood">rood</label>
+                <input  id="rood" type="radio" name="led">
+                <label for="blauw">blauw</label>
+                <input  id="blauw" type="radio" name="led">
+                <label for="wit">wit</label>
+                <input  id="wit" type="radio" name="led">
+
+            </fieldset>
+
+            <fieldset>
+                <legend> verzending details </legend>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="naam">Naam en Voornaam</label>
+                <input id="naam" name="naam" type="text" required pattern="[a-zA-Z]+ [a-zA-Z]+">
+
+                <label for="phone">Gsm Nummer</label>
+                <input type="tel" id="phone" name="phone" placeholder="04" pattern="04\d\d\d\d\d\d\d\d" required value="04">
+
+                <label for="adres">Adres</label>
+                <input class="biggertextbox" id="adres" name="naam" type="text" required>
+
+                <label for="datum">Levering Datum</label>
+                <input type="datetime-local" id="datum" name="user_dateTime">
+
+            </fieldset>
+            <input type="submit">
+            <!--Tijdelijk een A overheen hierdoor kom je direct naar de bevestigings pagina Later aanpassen dat dit werkt bij forms-->
+        </form>
+
+
+        <section class="personaliseringImage">
+            <h3 class="hidden">voorbeeld Personalisering</h3>
+            <img alt="voorbeeld Product van de ASUS 3070 8GB"
+                 src="../media/Gifs/rotating_gpu.gif"/>
+
+        </section>
+
+
+    </section>
+
+
+</main>
+
+
+<footer class="footer">
+    <img class="footerFoto"
+         alt="Gekleurde Afbeelding met blauwe en geele lijnen met grijze accenten die een golf beweging maken dat dient als achtergrond "
+         src="../media/texture/footerDesign.png">
+    <address class="adresGegevens">
+        geschreven door <a
+            href="mailto:&#121;&#117;&#110;&#117;&#115;&#46;&#115;&#97;&#104;&#105;&#110;&#64;&#115;&#116;&#117;&#100;&#101;&#110;&#116;&#46;&#107;&#100;&#103;&#46;&#98;&#101;">Yunus
+        Sahin</a>
+        <p>bezoek ons op: </p>
+        <p>onbekendestraat, 55, 2018 Antwerpen </p>
+        <p>+32412345678</p>
+    </address>
+</footer>
+
+
+</body>
+</html>
