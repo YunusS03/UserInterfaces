@@ -21,20 +21,18 @@
 
                 <a href="/index.html" class="font1 logo">YS</a>
 
-                <nav class="fill">
-                    <ul class="menu">
+                <div class="navbar">
+                    <a href="#" class="toggle">&#9776;</a>
+                    <nav class="fill">
+                      <ul class="menu ">
                         <li><a href="/index.html">Home</a></li>
                         <li><a href="/about.html">over mij</a></li>
                         <li class="active"><a href="/projects.html">projecten</a></li>
                         <li><a href="/werkplekleren.html">werkplekleren</a></li>
                         <li><a href="/contact.html">Contact</a></li>
-                    </ul>
-                    <ul class="breadcrumb">
-                        <li><a href="/index.html">Home</a></li>
-                        <li><a href="#">Projecten</a></li>
-                    </ul>
-
-                </nav>
+                      </ul>
+                    </nav>
+                  </div>
 
 
 
@@ -97,4 +95,12 @@
             </footer>
 
         </body>
+
+        <script>const toggle = document.querySelector('.toggle');
+            const menu = document.querySelector('.menu');
+            
+            toggle.addEventListener('click', () => {
+              menu.classList.toggle('visible');
+            });
+            </script>
     </html>
